@@ -1,7 +1,6 @@
 const quack1 = "⬛";
 const quack2 = ":red_square:";
 const { MessageEmbed } = require("discord.js")
-const config = require ('../config.json')
 
     module.exports.run = async (client, message, args) => {
  const user = message.mentions.users.first();
@@ -11,7 +10,7 @@ const config = require ('../config.json')
      }  
 if (message.mentions.users.size < 2) {
     let loveking = new MessageEmbed()
-        .setColor(config.embedColor)
+        .setColor("#a900ff")
         .setTitle('***・Shipando...***')
         .setDescription(`***・Ship ${message.author} & ${user}!***`)
         .setImage(`https://api.popcatdev.repl.co/ship?user1=${message.author.displayAvatarURL({ dynamic: false, format: "png" })}&user2=${user.displayAvatarURL({ dynamic: false, format: "png" })}`)
@@ -22,7 +21,7 @@ if (message.mentions.users.size < 2) {
    return message.channel.send(loveking)
 } else if (message.mentions.users.size > 1) {
 let ruther1 = new MessageEmbed()
-        .setColor(config.embedColor)
+        .setColor("#a900ff")
         .setTitle('***・Shipando...***')
         .setDescription(`***・Ship ${message.mentions.users.first()} & ${message.mentions.users.last()}!***`)
         .setImage(`https://api.popcatdev.repl.co/ship?user1=${message.mentions.users.first().displayAvatarURL({ dynamic: false, format: "png" })}&user2=${message.mentions.users.last().displayAvatarURL({ dynamic: false, format: "png" })}`)
