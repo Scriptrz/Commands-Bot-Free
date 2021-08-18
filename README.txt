@@ -1,0 +1,5 @@
+by Ruther!
+
+/////////////////////Sobre///////////////////////
+
+Script de bot Discord!
